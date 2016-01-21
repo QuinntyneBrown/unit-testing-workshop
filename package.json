@@ -1,0 +1,45 @@
+{
+  "name": "unit-testing-workshop",
+  "version": "0.0.1",
+  "description": "Unit Testing Workshop files",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuinntyneBrown/unit-testing-workshop.git"
+  },
+  "author": "Quinntyne Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/QuinntyneBrown/unit-testing-workshop/issues"
+  },
+  "homepage": "https://github.com/QuinntyneBrown/unit-testing-workshop#readme",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-mocks": "^1.4.8",
+    "angular-route": "^1.4.8",
+    "css-loader": "^0.23.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-karma": "0.0.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-webpack": "^1.5.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "karma-spec-reporter": "0.0.23",
+    "live-server": "^0.9.0",
+    "phantomjs": "^1.9.19",
+    "style-loader": "^0.13.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.10"
+  }
+}
