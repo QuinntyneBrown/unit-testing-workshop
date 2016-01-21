@@ -1,5 +1,8 @@
-﻿
-function safeDigest(scope) {
+﻿function safeDigest(force, scope) {
+
+    if (force)
+        scope.$digest();
+
     if (!scope.$$phase && (scope.$root && !scope.$root.$$phase))
         scope.$digest();
 }

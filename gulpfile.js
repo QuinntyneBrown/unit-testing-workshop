@@ -5,7 +5,8 @@ var rename = require("gulp-rename");
 
 gulp.task('run-unit-tests', function () {
     return gulp.src([
-        'wwwroot/0 - Introduction/checks-and-balances.js'
+        'lib/jquery.js',
+        'wwwroot/1 - writing unit tests/async-tests.js'
     ])
     .pipe(karma({
         configFile: 'karma.conf.js',
