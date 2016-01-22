@@ -40,6 +40,7 @@
     "phantomjs": "^1.9.19",
     "style-loader": "^0.13.0",
     "ts-loader": "^0.7.2",
+    "tsd": "^0.6.5",
     "typescript": "^1.7.5",
     "webpack": "^1.12.10"
   }

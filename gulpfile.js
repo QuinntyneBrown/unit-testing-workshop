@@ -6,7 +6,10 @@ var rename = require("gulp-rename");
 gulp.task('run-unit-tests', function () {
     return gulp.src([
         'lib/jquery.js',
-        'wwwroot/1 - writing unit tests/async-tests.js'
+        //'wwwroot/0 - Introduction/checks-and-balances.js',
+        //'wwwroot/0 - Introduction/checks-and-balances-fail.js',
+        'wwwroot/1 - writing unit tests/basic-tests.js',
+        //'wwwroot/1 - writing unit tests/async-tests.js'
     ])
     .pipe(karma({
         configFile: 'karma.conf.js',
@@ -19,4 +22,10 @@ gulp.task('run-unit-tests', function () {
 });
 
 
-gulp.task('default', ['run-unit-tests']);
+gulp.task('watch', function () {
+    gulp.watch([
+        './wwwroot/**/*.js'
+    ], ['run-unit-tests']);
+});
+
+gulp.task('default', ['run-unit-tests','watch']);
