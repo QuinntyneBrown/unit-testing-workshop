@@ -89,4 +89,3 @@ describe("dispatcher", function () {
         expect(callbackCalled).toBe(true);
     });
 });
-//# sourceMappingURL=basic-tests.js.map
