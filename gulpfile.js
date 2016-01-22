@@ -8,8 +8,9 @@ gulp.task('run-unit-tests', function () {
         'lib/jquery.js',
         //'wwwroot/0 - Introduction/checks-and-balances.js',
         //'wwwroot/0 - Introduction/checks-and-balances-fail.js',
-        'wwwroot/1 - writing unit tests/basic-tests.js',
-        //'wwwroot/1 - writing unit tests/async-tests.js'
+        //'wwwroot/1 - writing unit tests/basic-tests.js',
+        //'wwwroot/1 - writing unit tests/async-tests.js',
+        'wwwroot/1 - writing unit tests/jasmine-spys.js',
     ])
     .pipe(karma({
         configFile: 'karma.conf.js',
