@@ -6,11 +6,12 @@ var rename = require("gulp-rename");
 gulp.task('run-unit-tests', function () {
     return gulp.src([
         'lib/jquery.js',
-        'lib/angular.js',
-        'lib/angular-route.js',
-        'lib/angular-mocks.js',
-        'wwwroot/3 - frameworks/angular-app.js',
-        'wwwroot/3 - frameworks/angular-app.spec.js'
+        //'wwwroot/0 - Introduction/checks-and-balances.js',
+        //'wwwroot/0 - Introduction/checks-and-balances-fail.js',
+        //'wwwroot/1 - writing unit tests/basic-tests.js',
+        //'wwwroot/1 - writing unit tests/async-tests.js',
+        //'wwwroot/1 - writing unit tests/jasmine-spys.js',
+        'wwwroot/1 - writing unit tests/spyOn.js'
     ])
     .pipe(karma({
         configFile: 'karma.conf.js',
@@ -29,4 +30,4 @@ gulp.task('watch', function () {
     ], ['run-unit-tests']);
 });
 
-gulp.task('default', ['run-unit-tests', 'watch']);
+gulp.task('default', ['run-unit-tests','watch']);
